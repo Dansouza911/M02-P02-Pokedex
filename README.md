@@ -71,7 +71,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito por Darlan Souza Santos Cruz.
 
-[![Linkedin Badge](https://www.linkedin.com/in/darlan-souza-santos-173b5b121/)](https://www.linkedin.com/in/lu%C3%ADs-felipe-monteiro/)
+[![Linkedin Badge](https://www.linkedin.com/in/darlan-souza-santos-173b5b121/)](https://www.linkedin.com/in/darlan-souza-santos-173b5b121/)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dansouza911@gmail.com)
 
 ---

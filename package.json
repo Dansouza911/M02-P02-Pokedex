@@ -1,0 +1,26 @@
+{
+  "name": "m02-p02-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto 2 / Pokedex",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon  -e js,html,css,ejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dansouza911/M02-P02-Pokedex.git"
+  },
+  "author": "Darlan Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dansouza911/M02-P02-Pokedex/issues"
+  },
+  "homepage": "https://github.com/Dansouza911/M02-P02-Pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

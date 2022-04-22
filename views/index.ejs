@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+      <section id="cards">
+        <% pokedex.forEach(pokemon => { %>
+
+        <div class="card">
+          <img src="<%= pokemon.imagem %> " alt="imagem de um pokemon" />
+          <p class="name"><%= pokemon.nome %></p>
+          <p class="tipo">Tipo:<%= pokemon.tipo %></p>
+          <p><%= pokemon.id %> </p>
+        </div>
+        <% }) %>
+      </section>
+
+      <section id="cadastro">
+        <p>Cadastre um novo pokemon</p>
+        <form action="/add" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" />
+          <label for="imagem">Link da Imagem</label>
+          <input type="text" id="imagem" name="imagem">
+          <button id="buttom" type="submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %> 
+  </body>
+</html>
