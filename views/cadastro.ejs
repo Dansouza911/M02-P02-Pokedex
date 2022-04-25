@@ -1,29 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <% pokedex.forEach(pokemon => { %>
-        <section id="cadastro">
-            <p>Cadastre um novo pokemon</p>
-            <form action="/add" method="post">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" />
-    
-              <label for="tipo">Tipo:</label>
-              <input type="text" id="tipo" name="tipo" />
-              <label for="imagem">Link da Imagem</label>
-              <input type="text" id="imagem" name="imagem">
-              <button id="buttom" type="submit">Cadastrar</button>
-            </form>
-          </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="cadastro">
+      <fieldset class="fildMain">
+        <form action="/cadastro" method="post">
+          <legend>Cadastre um novo pokemon</legend>
+          <fieldset>
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome do Pokémon"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="descricao">Descrição</label>
+            <input
+              type="text"
+              id="descricao"
+              name="descricao"
+              placeholder="Descrição do Pokémon"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="imagem">Link da Imagem</label>
+            <input
+              type="text"
+              id="imagem"
+              name="imagem"
+              placeholder="URL da imagem"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="altura">Altura</label>
+            <input
+              type="text"
+              id="altura"
+              name="altura"
+              placeholder="Altura do Pokémon"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="peso">Peso</label>
+            <input
+              type="text"
+              id="peso"
+              name="peso"
+              placeholder="Peso do Pokémon"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="categoria">Categoria</label>
+            <input
+              type="text"
+              id="categoria"
+              name="categoria"
+              placeholder="Categoria do Pokémon"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="habilidade">Habilidade</label>
+            <input
+              type="text"
+              id="habilidade"
+              name="habilidade"
+              placeholder="Habilidade do Pokémon"
+            />
+          </fieldset>
+          <fieldset class="select">
+            <label for="tipo">Tipo:</label>
+            <!-- <input type="text" id="tipo" name="tipo" placeholder="Tipo do Pokémon"/> -->
+            <select id="tipo" name="tipo">
+              <option value="selecione">Selecione</option>
+              <option value="STEEL">STEEL</option>
+              <option value="WATER">WATER</option>
+              <option value="DRAGON ">DRAGON</option>
+              <option value="ELECTRIC">ELECTRIC</option>
+              <option value="FAIRY">FAIRY</option>
+              <option value="FANTASMA">FANTASMA</option>
+              <option value="FIRE">FIRE</option>
+              <option value="ICE">ICE</option>
+              <option value="BUG">BUG</option>
+              <option value="FIGHTING">FIGHTING</option>
+              <option value="NORMAL">NORMAL</option>
+              <option value="ROCK">ROCK</option>
+              <option value="GRASS">GRASS</option>
+              <option value="PSYCHIC">PSYCHIC</option>
+              <option value="DARK">DARK</option>
+              <option value="GROUND">GROUND</option>
+              <option value="POISON">POISON</option>
+              <option value="FLYING">FLYING</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <button id="buttom" type="submit">Cadastrar</button>
+          </fieldset>
+        </form>
+      </fieldset>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+  </body>
 </html>
-
- 
-
-    
