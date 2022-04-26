@@ -4,7 +4,7 @@ import path from "path";
 const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
-const port = 3000 || "https://shielded-beyond-48951.herokuapp.com/"
+const port = 3000 || "https://git.heroku.com/pokedex-projeto2.git"
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
