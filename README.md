@@ -51,6 +51,7 @@ Tabela de conteúdos
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
+**[Acesse Aqui](https://pokedex-m02-02-blue.onrender.com/)**
 
 Qualquer navegador.
 
