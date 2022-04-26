@@ -1,10 +1,12 @@
 import express from "express";
 import path from "path";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
-const port = 3000 || "https://git.heroku.com/pokedex-projeto2.git"
+const port = 3000 || process.env.PORT
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
