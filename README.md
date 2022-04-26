@@ -25,7 +25,8 @@ Tabela de conteúdos
 
 
 ## 💻 Sobre o projeto
-<h3>Trata-se de uma enciclopédia virtual portátil de alta tecnologia que os treinadores Pokémon transportam. </h3>
+<h3>Pokedéx do mundo pokemon, utilizando um banco de dados fake no JS, recriando um site com a página principal, a de cadastro de um novo pokemon e e a detalhes do pokemon escolhido.
+	projeto feito para aprendizado.
 
 ---
 
@@ -39,9 +40,9 @@ Tabela de conteúdos
 ## 🎨 Layout
 
 <p align="center">
-	<img src="" alt="screenshot1" width="250"/>
-	<img src="" alt="screenshot2" width="250"/>
-	
+	<img src="https://github.com/Dansouza911/M02-P02-Pokedex/blob/main/public/image/screenshoot1.png" alt="screenshot1" width="250"/>
+	<img src="https://github.com/Dansouza911/M02-P02-Pokedex/blob/main/public/image/screenshoot2.png" alt="screenshot2" width="250"/>
+	<img src="https://github.com/Dansouza911/M02-P02-Pokedex/blob/main/public/image/screenshoot3.png" alt="screenshot2" width="250"/>
 </p>
 
 
@@ -61,6 +62,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[JavaScript](https://www.javascript.com/)**
 -   **[CSS]()**
+-   **[Framework Express](https://expressjs.com/pt-br/)**
 -   **[VS Code](https://code.visualstudio.com/)**
 
 ---
