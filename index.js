@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.render("index", {
+  res.status(200).render("index", {
     pokedex,
   });
 });
@@ -24,21 +24,21 @@ app.get("/detalhes/:id", (req, res) => {
   pokedex.filter((Element) => {
     if (Element.id == req.params.id) poke.push(Element);
   });
-  res.render("detalhes.ejs", {
+  res.status(200).render("detalhes.ejs", {
     poke,
   });
 });
 app.get;
 
 app.get("/cadastro", (req, res) => {
-  res.render("cadastro.ejs");
+  res.status(200).render("cadastro.ejs");
 });
 
 app.post("/cadastro", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
-  res.redirect("/");
+  res.status(200).redirect("/");
 });
 
 /* app.post('/cadastro', (req, res) => {
