@@ -6,7 +6,7 @@ dotenv.config()
 const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
-const port = 3000 || process.env.PORT
+const port = 3000 || 'https://m02-p02-pokedex-dy4dehcoa-dansouza911.vercel.app/'
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
