@@ -25,7 +25,7 @@ Tabela de conteúdos
 
 
 ## 💻 Sobre o projeto
-<h3>Pokedéx do mundo pokemon, utilizando um banco de dados fake no JS, recriando um site com a página principal, a de cadastro de um novo pokemon e e a detalhes do pokemon escolhido.
+<h3>Pokedéx do mundo pokemon, utilizando um banco de dados no modelo MVC, recriando um site com a página principal, a de cadastro de um novo pokemon e e a detalhes do pokemon escolhido.
 	projeto feito para aprendizado.
 
 ---
@@ -51,6 +51,7 @@ Tabela de conteúdos
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
+**[Acesse Aqui](https://pokedex-m02-02-blue.onrender.com/)**
 
 Qualquer navegador.
 
